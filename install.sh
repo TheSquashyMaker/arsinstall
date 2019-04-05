@@ -21,4 +21,5 @@ if [ ! -f $HOME/Build-Ubuntu.sh]; then
 echo "${GREEN}Installing Vrui Toolkit"
 wget --quiet http://idav.ucdavis.edu/~okreylos/ResDev/Vrui/Build-Ubuntu.sh
 bash $HOME/Build-Ubuntu.sh
+rm $HOME/Build-Ubuntu.sh
 fi
