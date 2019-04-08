@@ -2,7 +2,7 @@
 ARS automated installation software
 
 This code assumes that you have a few things:
-Git,
+\nGit,
 A computer that meets requirements for SARNDBOX,
 Nvidia Drivers,
 Sudo,
