@@ -17,9 +17,13 @@ echo -n "${PURPLE}
 
     You should have received a copy of the GNU General Public License
     along with this program.  If not, see <https://www.gnu.org/licenses/>"
+if [ -f $HOME/Build-Ubuntu.sh]; then
+echo -n "${RED}Old version of Vrui detected, removing"
+rm $HOME./Build-Ubuntu.sh
+fi
 if [ ! -f $HOME/Build-Ubuntu.sh]; then
-echo "${GREEN}Installing Vrui Toolkit"
-wget --quiet http://idav.ucdavis.edu/~okreylos/ResDev/Vrui/Build-Ubuntu.sh
+echo -n "${GREEN}Installing Vrui Toolkit"
+wget --quiet http://idav.ucdavis.edu/~okreylos/ResDev/Vrui/Build-Ubuntu.sh -o $HOME/Build-Ubuntu.sh
 bash $HOME/Build-Ubuntu.sh
 echo "${GREEN}Done"
 rm $HOME/Build-Ubuntu.sh
