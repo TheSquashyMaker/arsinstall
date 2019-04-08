@@ -8,7 +8,7 @@ Nvidia Drivers,
 Sudo,
 and a full account (not a guest one!)
 
-To get this software, run `git clone https://github.com/TheSquashyMaker/arsinstall/master/arsinstall.git`
+To get this software, run `git clone https://github.com/TheSquashyMaker/arsinstall/arsinstall.git`
 then `cd ~/arsinstall`
 then `sudo chmod a+x ./install.sh`
 then `sudo ./install.sh`
